@@ -1,1 +1,172 @@
-ATR Indicator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Contribution: AI Agent Stock Prediction</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #4A90E2;
+      --secondary: #50E3C2;
+      --accent: #9013FE;
+      --bg: #f5f7fa;
+      --text: #333;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      padding: 2rem 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section { margin-bottom: 2rem; }
+    section h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+    table th {
+      background: var(--primary);
+      color: #fff;
+    }
+    table tr:nth-child(even) { background: #fff; }
+    table tr:nth-child(odd)  { background: #e9eff5; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 0.3rem;
+      margin-top: 1rem;
+    }
+    .screenshot {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 0.3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Contribution: AI Agent Stock Prediction</h1>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This project is a Streamlit-based AI Agent Stock Prediction system that integrates the Average True Range (ATR) technical indicator with CrewAI agents to generate buy, sell, or hold recommendations. I personally developed the ATR calculation engine, integrated real-time and historical data feeds, built the CrewAI investment-advisor agent, and implemented both unit/integration tests and a backtesting framework to validate performance.</p>
+    </section>
+
+    <section id="overview">
+      <h2>Project Overview</h2>
+      <p>The following summarizes the main objectives achieved in each sprint.</p>
+      <table>
+        <thead>
+          <tr><th>Sprint</th><th>Objective</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sprint 1</td><td>Minimal Viable Product: ATR calculation + data fetching</td></tr>
+          <tr><td>Sprint 2</td><td>Customization &amp; real-time data integration with CrewAI</td></tr>
+          <tr><td>Sprint 3</td><td>Investment-decision support &amp; performance testing</td></tr>
+          <tr><td>Sprint 4</td><td>Unit/integration tests and backtesting framework</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tasks">
+      <h2>User Stories &amp; Tasks Summary</h2>
+      <p>Key tasks I completed</a>):</p>
+      <table>
+        <thead>
+          <tr><th>Task ID</th><th>Description</th><th>Status</th><th>Hours</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ATR.1</td><td>Implement ATR indicator calculation</td><td>Completed</td><td>25</td></tr>
+          <tr><td>ATR.3</td><td>Integrate real-time &amp; historical data</td><td>Completed</td><td>20</td></tr>
+          <tr><td>ATR.8</td><td>Develop CrewAI investment-advisor agent</td><td>Completed</td><td>39</td></tr>
+          <tr><td>ATR.10</td><td>Ensure performance &amp; scalability</td><td>Completed</td><td>16</td></tr>
+          <tr><td>ATR.11</td><td>Implement backtesting framework</td><td>Completed</td><td>28</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contributions">
+      <h2>Code &amp; Contributions</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/saichandu2511/Alavala-AI-Agent-Stock-Prediction"
+             class="btn" target="_blank">View Source on GitHub</a>
+        </li>
+        <li>Screenshots of key contributions:
+          <div>
+            <img src="1.png">
+            <img src="2.png">
+            <img src="3.png">
+            <img src="4.png">
+            <img src="5.png">
+          </div>
+        </li>
+      </ul>
+    </section>
+      <h3>Full Commit History</h3>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Commit</th><th>Description</th><th>Story</th><th>Task</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Feb 3, 2025</td><td>f49584aaf6</td><td>Adding ATR code</td><td>ATR</td><td>ATR.1</td></tr>
+          <tr><td>Feb 8, 2025</td><td>ee8fd03cdd</td><td>ATR Customization features</td><td>ATR</td><td>ATR.3</td></tr>
+          <tr><td>Feb 15, 2025</td><td>2630b9f661</td><td>ATR.3 real time data</td><td>ATR</td><td>ATR.3</td></tr>
+          <tr><td>Mar 17, 2025</td><td>48b5fd0084</td><td>Integrate CrewAI ATR Advisor</td><td>ATR</td><td>ATR.8</td></tr>
+          <tr><td>Apr 1, 2025</td><td>5c87852204</td><td>Add testing code for ATR</td><td>ATR</td><td>ATR.10</td></tr>
+          <tr><td>Apr 22, 2025</td><td>b4d36f7eb5</td><td>ATR Backtesting</td><td>ATR</td><td>ATR.11</td></tr>
+        </tbody>
+      </table>
+    <section id="appendix">
+      <h2>Appendix</h2>
+      <h3>Task Hours Documents</h3>
+      <ul>
+        <li><a href="Alavala Task Hours Achieved Sprint 1.docx" download>Sprint 1 Task Hours</a></li>
+        <li><a href="Alavala Task Hours Achieved Sprint 2.docx" download>Sprint 2 Task Hours</a></li>
+        <li><a href="Alavala Task Hours Achieved Sprint 3.docx" download>Sprint 3 Task Hours</a></li>
+        <li><a href="Alavala Task Hours Achieved Sprint 4.docx" download>Sprint 4 Task Hours</a></li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
