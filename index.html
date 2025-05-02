@@ -88,8 +88,8 @@
   <main>
     <section id="intro">
       <h2>Introduction</h2>
-      <p>This project is a Streamlit-based AI Agent Stock Prediction system that integrates the Average True Range (ATR) technical indicator with CrewAI agents to generate buy, sell, or hold recommendations. I personally developed the ATR calculation engine, integrated real-time and historical data feeds, built the CrewAI investment-advisor agent, and implemented both unit/integration tests and a backtesting framework to validate performance.</p>
-    </section>
+      <p>In today’s fast-moving markets, individual traders face challenges in quantifying market volatility and timing their entries and exits. Manually calculating the Average True Range (ATR) indicator—a measure of volatility introduced by J. Welles Wilder—can be error-prone and time-consuming, while many existing analytics platforms lack seamless integration with AI-driven decision support. This project delivers a Streamlit application that automatically ingests historical and real-time stock data, computes ATR to assess volatility bands, and employs CrewAI agents to analyze ATR deviations in the context of current price action. By automating data retrieval, indicator computation, and AI-driven analysis, our solution provides clear buy, sell, or hold recommendations, enabling users to execute more informed trades with minimal manual overhead.</p>
+      </section>
 
     <section id="overview">
       <h2>Project Overview</h2>
@@ -123,7 +123,14 @@
         </tbody>
       </table>
     </section>
-
+      <p>Each user story encapsulates a critical functional requirement:</p>
+      <ul>
+        <li><strong>ATR.1:</strong> Developed the ATR calculation engine using high, low, and close price series to accurately measure volatility over a rolling window.</li>
+        <li><strong>ATR.3:</strong> Integrated both historical daily data and 1-minute real-time feeds to ensure the ATR indicator reflects live market conditions.</li>
+        <li><strong>ATR.8:</strong> Designed and implemented the CrewAI investment-advisor agent that consumes ATR values and current market price to generate dynamic trade recommendations.</li>
+        <li><strong>ATR.10:</strong> Built a comprehensive suite of unit and integration tests covering data ingestion, indicator computation, and agent logic to guarantee system reliability.</li>
+        <li><strong>ATR.11:</strong> Extended the platform with a backtesting framework that simulates historical performance of ATR-based signals, demonstrating the strategy’s effectiveness.</li>
+      </ul>
     <section id="contributions">
       <h2>Code &amp; Contributions</h2>
       <ul>
